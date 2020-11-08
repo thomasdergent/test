@@ -14,7 +14,6 @@ export class AuthenticateService {
   constructor(private _httpClient: HttpClient) { }
 
   authenticate(userLogin: UserLogin): Observable<User> {
-    return this._httpClient.post<User>("https://localhost44348/api​/User​/authenticate", userLogin);
+    return this._httpClient.post<User>("https://localhost:44348/api/User/authenticate", userLogin);
   }
-
 }
